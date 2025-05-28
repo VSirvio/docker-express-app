@@ -1,4 +1,10 @@
 services:
+  express-app:
+    image: vsirvio/docker-express-app
+    ports:
+      - 8080:8080
+    container_name: express-app
+
   watchtower:
     image: containrrr/watchtower
     environment:
